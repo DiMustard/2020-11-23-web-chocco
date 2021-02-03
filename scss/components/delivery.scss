@@ -2,6 +2,7 @@
     color: $green;
 
     .delivery__title {
+        text-align: center;
         white-space: nowrap;
         color: $deepgreen;
         margin-bottom: rem(46px);
@@ -13,20 +14,15 @@
     }
 }
 
-@include tablet {
-    .container__form--center {
-        padding: 0 15vw; //rem(120px)
+form {
+    @include tablet {
+        padding: 0 17%;
     }
-}
 
-@include phone {
-    .container__form--center {
+    @include phone {
         padding: 0;
     }
-}
 
-
-form {
     * {
         width: 100%;
     }

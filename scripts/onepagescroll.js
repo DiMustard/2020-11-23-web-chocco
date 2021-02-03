@@ -88,7 +88,6 @@ $(document).ready(function () {
     let md = new MobileDetect(window.navigator.userAgent);
     let isMobile = md.mobile();
 
-
     // https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
     if (isMobile) {
         $("body").swipe({

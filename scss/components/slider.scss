@@ -1,7 +1,5 @@
 .slider .container {
     position: relative;
-    padding-top: rem(60px);
-    padding-bottom: rem(60px);
 
     @include tablet {
         padding-top: 0;
@@ -166,6 +164,7 @@
 }
 
 .product__title {
+    z-index: 100;
     margin: rem(24px) 0;
 
     @include tablet {

@@ -93,6 +93,7 @@ section.slider {
     background-color: #F8FAF9;
 }
 
+
 section.team {
     background: none;
 
@@ -134,14 +135,20 @@ section.team {
         background: none;
 
         &::before {
+            width: rem(101.24px);
+            height: rem(234px);
             background: url("/2020-11-23-web-chocco/images/decorate/comp--berry4--pattern3png.png") center center / contain no-repeat;
-            top: -27%;
+            top: -22%;
             right: -5%;
         }
 
         &::after {
             position: absolute;
-            content: url("/2020-11-23-web-chocco/images/decorate/berry--4.png");
+            content: "";
+            width: rem(89px);
+            height: rem(98px);
+            background:
+                url("/2020-11-23-web-chocco/images/decorate/berry--4.png") center center / contain no-repeat;
             top: 94.5%;
             left: 0.5%;
         }
@@ -150,9 +157,11 @@ section.team {
     background-color: $white;
 }
 
+
 section.menu {
     background: url("/2020-11-23-web-chocco/images/decorate/accord--bg.png") center center / cover no-repeat;
 }
+
 
 section.reviews {
     background: url("/2020-11-23-web-chocco/images/decorate/berry--5.png") top 13.5% right 2.5% no-repeat;
@@ -183,6 +192,7 @@ section.reviews {
 
     @include phone {
         background-position: top 2.5% right -8%;
+        background-size: 33%;
 
         &::before {
             background: url("/2020-11-23-web-chocco/images/decorate/comp--berry6--pattern4--phone.png") center center / contain no-repeat;
@@ -278,6 +288,7 @@ section.video {
 
     @include phone {
         &::after {
+            top: 84.5%;
             right: -2%;
         }
     }
@@ -291,14 +302,22 @@ section.delivery {
         url("/2020-11-23-web-chocco/images/decorate/berry--7.png") bottom 17.5% left 5% no-repeat,
         url("/2020-11-23-web-chocco/images/decorate/sheet--4.png") bottom 20% right 1% no-repeat,
         url("/2020-11-23-web-chocco/images/decorate/raspberry--bg.png") center center / cover no-repeat;
+    background-color: #CFDEDB;
 
     @include tablet {
         background: url("/2020-11-23-web-chocco/images/decorate/raspberry--bg.png") center center / cover no-repeat;
+        background-color: #CFDEDB;
     }
 
     @include phone {
         background: url("/2020-11-23-web-chocco/images/decorate/raspberry--bg.png") center center / cover no-repeat;
+        background-color: #CFDEDB;
     }
+}
 
-    background-color: #CFDEDB;
+section.contacts {
+    .container .map {
+        // background: url("/2020-11-23-web-chocco/images/decorate/map.png") center center / cover no-repeat;
+        background-color: #61C4D9;
+    }
 }

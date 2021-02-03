@@ -1,9 +1,26 @@
 let myMap;
+let zoom;
+
+
+if ($(window).width() <= 480) {
+    zoom = 12;
+} else {
+    zoom = 13;
+}
+
+$(window).resize(() => {
+    if ($(window).width() <= 480) {
+        zoom = 12;
+    } else {
+        zoom = 13;
+    }
+});
+
 
 const init = () => {
     myMap = new ymaps.Map("map", {
         center: [56.866582, 53.209872],
-        zoom: 13,
+        zoom: zoom,
         controls: [],
     });
 
