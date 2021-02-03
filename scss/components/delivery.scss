@@ -28,12 +28,17 @@ form {
     }
 
     margin-bottom: rem(16px);
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     text-align: left;
 
     .parent__col {
-        column-count: 2;
-        column-gap: rem(36px);
+        -moz-column-count: 2;
+             column-count: 2;
+        -moz-column-gap: rem(36px);
+             column-gap: rem(36px);
         margin-bottom: rem(38px);
 
         &:last-child {
@@ -41,8 +46,10 @@ form {
         }
 
         @include tablet {
-            column-count: 1;
-            column-gap: 0;
+            -moz-column-count: 1;
+                 column-count: 1;
+            -moz-column-gap: 0;
+                 column-gap: 0;
         }
     }
 
