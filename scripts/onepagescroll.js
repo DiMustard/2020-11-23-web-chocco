@@ -1,4 +1,4 @@
-$(document).ready(function () {
+(function () {
     let inScroll = false;
     let display = $(".wrapper__content");
     let sectS = $("section");
@@ -100,4 +100,4 @@ $(document).ready(function () {
             },
         });
     }
-});
+})();
